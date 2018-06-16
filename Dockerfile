@@ -2,7 +2,7 @@ FROM node:9-alpine
 ENV NODE_ENV development
 
 RUN apk update
-RUN apk add git openssh
+RUN apk add git
 
 COPY gitconfig /etc/gitconfig
 RUN git config --list 
