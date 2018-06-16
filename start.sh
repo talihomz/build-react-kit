@@ -16,5 +16,12 @@ if [ ! -f /app/.gitlab-ci.yml ]; then
 	cp /tmp/.gitlab-ci.yml /app/.gitlab-ci.yml
 fi
 
+# copy node modules config if none is specified
+if [ ! -d /app/node_modules ]; then
+
+	cp -a /tmp/node_modules /app/
+    npm link gulp
+fi
+
 # run dev
 npm run dev
