@@ -1,7 +1,7 @@
 FROM node:9-alpine
 ENV NODE_ENV development
 
-COPY package.json /tmp/package.json
+COPY . /tmp/
 RUN cd /tmp && npm install
 RUN mkdir -p /app && cp -a /tmp/node_modules /app/
 
