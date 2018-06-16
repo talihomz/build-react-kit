@@ -60,6 +60,5 @@ gulp.task('build', (callback) =>
 
 // Default task
 gulp.task('default', (callback) =>
-  runSequence('build', 'serve',
-              callback)
+  runSequence('build', 'serve', callback)
 );
