@@ -7,7 +7,7 @@ fi
 # copy our package.json if it doesn't exist
 if [ ! -f /app/package.json ]; then
 
-	cp /tmp/package.js /app/package.js
+	cp /tmp/package.json /app/package.json
 fi
 
 # copy Gitlab CI config if none is specified
