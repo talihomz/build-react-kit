@@ -6,8 +6,7 @@
     "main": "gulpfile.js",
     "scripts": {
       "dev": "gulp",
-      "build:css": "gulp sass",
-      "build:images": "gulp images"
+      "build": "gulp build"
     },
     "keywords": [
       "HTML",
