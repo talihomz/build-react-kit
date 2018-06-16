@@ -23,7 +23,6 @@
     "devDependencies": {
       "browser-sync": "^2.23.6",
       "gulp": "^3.9.1",
-      "gulp-imagemin": "^4.1.0",
       "gulp-sass": "^3.2.1",
       "run-sequence": "^2.2.1"
     }
