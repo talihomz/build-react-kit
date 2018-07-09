@@ -14,18 +14,17 @@ RUN apk add --update \
 #
 # COPY Gemfile .
 # RUN bundle install
-
 WORKDIR /
-RUN ls -l
-RUN git clone https://gitlab.com/wahomekevin/web-starter-default.git app
 ENV NODE_ENV development
 
 WORKDIR /app
 
 RUN git config --list 
-RUN npm install
+ADD package.json temp-package.json
+RUN mv temp-package.json package.json && npm install
 RUN npm install -g gulp && npm link gulp
 
+ADD gulpfile.js .
 COPY build.sh .
 COPY install.sh .
 
