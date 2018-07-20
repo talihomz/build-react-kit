@@ -1,32 +1,16 @@
 {
     "name": "frontend-starter",
-    "version": "1.0.2",
-    "description": "Frontend implementation starter kit for building HTML/CSS",
-    "main": "gulpfile.js",
-    "scripts": {
-      "dev": "gulp",
-      "build": "gulp build"
-    },
+    "version": "2.0.0",
+    "description": "Tools for building with HTML, CSS, SASS and ES6.",
     "keywords": [
       "HTML",
       "CSS",
       "JS",
-      "Website",
-      "Starter",
-      "Frontend"
+      "ES6",
+      "Docker",
+      "Docker Compose"
     ],
     "author": "Wahome Kevin(wahomekevin@gmail.com)",
     "license": "ISC",
-    "homepage": "https://github.com/talihomz/Frontend-Starter#readme",
-    "devDependencies": {
-      "browser-sync": "^2.23.6",
-      "babel-core": "6.26.3",
-      "babel-preset-env": "1.7.0",
-      "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
-      "babel-plugin-transform-es2015-modules-amd": "6.24.1",
-      "gulp": "^3.9.1",
-      "gulp-babel": "^7.0.1",
-      "gulp-sass": "^3.2.1",
-      "run-sequence": "^2.2.1"
-    }
+    "homepage": "https://github.com/talihomz/Frontend-Starter#readme"
   }
