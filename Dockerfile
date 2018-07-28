@@ -13,3 +13,5 @@ RUN mv ./tmp/* ./ && yarn install
 # clean up
 RUN rm -rf ./tmp
 RUN rm -rf gitconfig
+
+EXPOSE 3000
