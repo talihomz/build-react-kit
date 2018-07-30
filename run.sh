@@ -1,4 +1,4 @@
-ln -s /app/node_modules node_modules
-cp /app/** .
+ln -s $APP_PATH/node_modules node_modules
+cp -s $APP_PATH/*.* .
 
 npm run build
