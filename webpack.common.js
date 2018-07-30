@@ -42,7 +42,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['public'], {
+    new CleanWebpackPlugin(['public/*.*'], {
       watch: true
     }),
     new MiniCssExtractPlugin({
