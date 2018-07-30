@@ -6,10 +6,10 @@
   "author": "Margarita Obraztsova <marharyta.obraztsova@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --config=webpack.dev.js --watch",
-    "build": "webpack --config=webpack.prod.js"
+    "dev": "webpack --config webpack.dev.js --watch",
+    "build": "webpack --config webpack.prod.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^8.6.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
