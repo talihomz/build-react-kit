@@ -1,5 +1,5 @@
 ln -s $APP_PATH/node_modules node_modules
-cp -s $APP_PATH/*.* .
+cp /app/** .
 
 npm run build
 ls public/
