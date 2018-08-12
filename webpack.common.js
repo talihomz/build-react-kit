@@ -6,6 +6,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
+// configs
+const CleanConfig = require("./clean.config");
+
+// clean config
 module.exports = {
   entry: { 
     main: './src/index.js' 
@@ -39,15 +43,19 @@ module.exports = {
             'file-loader'
         ]
       },
+      {
+        test: /\.html$/,
+        loader: "html-loader"
+      }
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['public/*.*']),
+    new CleanWebpackPlugin(CleanConfig.paths, CleanConfig.options),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
