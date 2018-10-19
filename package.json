@@ -2,8 +2,7 @@
   "name": "webpack-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:marharyta/webpack-boilerplate.git",
-  "author": "Margarita Obraztsova <marharyta.obraztsova@gmail.com>",
+  "author": "Wahome Kevin <wahomekevin@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "webpack --config webpack.dev.js --watch",
