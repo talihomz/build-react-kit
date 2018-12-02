@@ -21,7 +21,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
@@ -63,7 +63,7 @@ module.exports = {
     new WebpackMd5Hash(),
     new StyleLintPlugin({
       configFile: './stylelint.config.js',
-      files: './src/scss/*.scss',
+      files: './src/**/*.scss',
       syntax: 'scss'
     })
   ]
