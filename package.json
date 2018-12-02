@@ -8,6 +8,9 @@
     "dev": "webpack --config webpack.dev.js --watch",
     "build": "webpack --config webpack.prod.js"
   },
+  "babel": {
+    "presets": ["react"]
+  },
   "dependencies": {
     "autoprefixer": "^8.6.3",
     "babel-core": "^6.26.3",
@@ -25,10 +28,13 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jsx-html-class": "^1.0.3",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
     "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "stylelint": "^9.3.0",
