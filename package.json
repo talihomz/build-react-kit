@@ -9,7 +9,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "babel": {
-    "presets": ["react"]
+    "presets": ["react", "stage-1"]
   },
   "dependencies": {
     "autoprefixer": "^8.6.3",
