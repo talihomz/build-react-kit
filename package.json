@@ -12,6 +12,12 @@
     "presets": ["react", "stage-1"]
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
     "autoprefixer": "^8.6.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -28,15 +34,10 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
     "jsx-html-class": "^1.0.3",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
-    "postcss-loader": "^2.1.5",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1",
+    "postcss-loader": "^2.1.5",    
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "stylelint": "^9.3.0",
@@ -45,7 +46,6 @@
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
-    "webpack-md5-hash": "^0.0.6",
     "webpack-merge": "^4.1.3",
     "yarn": "^1.7.0"
   }
