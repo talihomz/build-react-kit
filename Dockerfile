@@ -16,4 +16,7 @@ RUN mv ./tmp/* ./ && yarn install
 RUN rm -rf ./tmp
 RUN rm -rf gitconfig
 
+# create public folder
+RUN mkdir dist
+
 EXPOSE 3000

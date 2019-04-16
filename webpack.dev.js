@@ -9,9 +9,17 @@ module.exports = merge(common, {
             host: '127.0.0.1',
             port: '3000',
             server: {
-                baseDir: [ 'public' ]
+                baseDir: [ 'dist' ]
             },
-            injectCss: true
+            injectCss: true,
+            rewriteRules: [
+                {
+                    match: /Content-Security-Policy/,
+                    fn: function (match) {
+                        return "DISABLED-Content-Security-Policy";
+                    }
+                }
+              ]
         })
     ],
     mode: 'development'
